@@ -6,6 +6,7 @@ import os
 import yaml
 import subprocess
 import datetime
+import sys
 
 
 u = ""
@@ -29,7 +30,7 @@ fsfile.close()
 
 # Open and process yaml file.
 
-with open('mount.yml', "r") as file:
+with open(sys.argv[1], "r") as file:
     try:
         output = yaml.safe_load(file)
         entries = output['fstab']
@@ -54,7 +55,6 @@ with open('mount.yml', "r") as file:
                     u = u + ":" + str(entries[e][x])
                 else:
                     u = u + " " + str(entries[e][x])
-                    print(u)
 
             if ":" in u:
                 final = e + u
