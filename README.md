@@ -23,7 +23,7 @@ NOTE : This script has been designed to configure fstab from scratch only based 
 ### Bug Report
 
 - Send any issues to GitHub's issue tracker.
-- For feature requests open a [new issue](https://github.com/digitalsurvival/pyfstab/issues/new) with the label "feature request."
+- For feature requests open a [new issue](https://github.com/m2khosravi/pyfstab/issues/new) with the label "feature request."
 
 ### Contribute
 
